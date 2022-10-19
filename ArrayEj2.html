@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Ejercicio 2 C.I.L.S.A.</title>
+</head>
+<body>
+    <script>
+        //declaramos el array y le asignamos los valores
+        let posiciones = ["Jesús", "Laura", "Nahuel", "Mónica", "Maria", "Leandro", "Susana "];
+        
+        //imprimimos cada uno de los valores del array (comienza por cero!)
+        document.write("Lista de alumnos" + "<br>"); //"<br>" nos hace salto de linea
+        document.write("1. " + posiciones[0] + "<br>"); 
+        document.write("2. " + posiciones[1] + "<br>");
+        document.write("3. " + posiciones[2] + "<br>");
+        document.write("4. " + posiciones[3] + "<br>");
+        document.write("5. " + posiciones[4] + "<br>");
+        document.write("6. " + posiciones[5] + "<br>");
+        document.write("7. " + posiciones[6] + "<br>");
+
+    //CAMBIOS DEL ARRAY
+
+        //cambio de posicion de alumnos
+        posiciones[2] = "Mónica";
+        posiciones[3] =  "Nahuel";
+
+        //elimino un alumno de la lista
+        posiciones.splice(5, 1)
+
+        //agrego dos alumnos en cierta posicion de la lista
+        posiciones.splice(1, 1, "Roberto", "Claudia", "Laura")
+        
+    
+
+        //impresion del array nuevo
+
+        document.write("Nueva lista de alumnos" + "<br>"); //"<br>" nos hace salto de linea
+        document.write("1. " + posiciones[0] + "<br>"); 
+        document.write("2. " + posiciones[1] + "<br>");
+        document.write("3. " + posiciones[2] + "<br>");
+        document.write("4. " + posiciones[3] + "<br>");
+        document.write("5. " + posiciones[4] + "<br>");
+        document.write("6. " + posiciones[5] + "<br>");
+        document.write("7. " + posiciones[6] + "<br>");
+        document.write("8. " + posiciones[7] + "<br>");
+        
+    </script>
+
+    
+</body>
+</html>
